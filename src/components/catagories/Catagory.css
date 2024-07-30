@@ -1,0 +1,30 @@
+.catagory{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cata_con ul{
+    display: flex;
+    list-style-type:none;
+    gap: 5px;
+    
+    
+}
+
+.cata_con ul li{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+.cata_con ul li:hover{
+    
+    background-color: rgb(205, 205, 205);
+}

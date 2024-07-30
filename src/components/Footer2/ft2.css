@@ -1,0 +1,32 @@
+.ft2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.ft2 li{
+    list-style-type: none;
+}
+.ft2-logo ul{
+    display: flex;
+    align-items: center;
+}
+
+.ft2-copy{
+    color: rgb(84, 84, 84);
+}
+
+.ft2 ul li{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ft2 ul li:hover{
+    background-color: rgb(202, 200, 200);
+    color: white;
+}

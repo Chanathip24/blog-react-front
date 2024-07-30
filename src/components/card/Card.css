@@ -1,0 +1,101 @@
+.card{
+    position: relative;
+    height: 700px;
+    width: 500px;
+    
+   
+}
+.caption{
+    position: absolute;
+    padding-top: 70%;
+    top: 0;
+    left: 0;
+    bottom: 200px;
+    right: 0;
+    border-radius: 10px;
+    opacity: 0;
+    background: rgba(99, 27, 27, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+}
+.captionst{
+    width: 80%;
+
+    text-align: center;
+}
+.captionst p {
+    margin-top: 0.5rem;
+    font-weight: 200;
+}
+.card:hover .caption{
+    opacity: 1;
+    top: 0;
+    padding-top: 0;
+}
+.card-catastore{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100px;
+    height: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+}
+.card-catastore:hover{
+    background-color: rgb(221, 220, 220);
+    
+}
+.card-pic{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.card img{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+}
+.card-title-p{
+    width: 30vw;
+}
+.card-title span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-title span:hover{
+    color: orange;
+}
+
+.card-info{
+    display: flex;
+    margin-top: 10px;
+    color: rgb(148, 149, 149);
+}
+.card-info p {
+    
+    margin-right: 1rem;
+}

@@ -1,0 +1,9 @@
+.mycard{
+    width: 100%;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    gap: 15px;
+    
+}

@@ -1,0 +1,21 @@
+.pagcon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagcon ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.pagcon ul li{
+    font-size: 3rem;
+    font-weight: 1000;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.pagcon ul li:hover{
+    color: orange;
+}
