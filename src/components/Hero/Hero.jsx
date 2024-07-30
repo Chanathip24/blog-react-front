@@ -8,7 +8,7 @@ const Hero = () => {
                 <h1>Your guide in the world of 3D art</h1>
                 <div>
                     <p>Learn more about the tools,techniques and secrets</p>
-                    <p>3D professionals use to create their magical at.</p>
+                    <p>3D professionals use to create their magical art.</p>
                 </div>
             </div> 
         </div>
