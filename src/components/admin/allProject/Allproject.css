@@ -1,0 +1,35 @@
+.adcontainer{
+    background-color: white;
+    width: 100vw;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+.ad-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.ad-title-secondary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.ad-details{
+    width: 300px;
+    
+}
+.ad-details-data{
+    border-radius: 10px;
+    background-color: rgb(255, 133, 133);
+    padding: 1rem;
+    
+}
+.ad-details-data h4{
+    width: 20vw;
+}
+.ad-blog{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
