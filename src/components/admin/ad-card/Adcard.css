@@ -1,0 +1,75 @@
+.ad-details{
+    width: 250px;
+    position: relative;
+}
+.ad-details-data{
+    
+    padding: 1rem;
+    
+}
+.carddropdownstore{
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.carddropdownstore:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+.carddropdown{
+    cursor: pointer;
+    
+}
+.dropdown{
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+}
+
+
+
+.ad-card-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(71, 71, 71);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.ad-card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+.ad-card-title h5{
+    font-weight: 400;
+}
+hr{
+    border: solid white 0.3px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.ad-card-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ad-card-detail-img img{
+    width: 25px;
+    height: 20px;
+    border-radius: 100%;
+}
+.caldate{
+    background-color: rgba(253, 253, 253, 0.8);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 0.8rem;
+
+    
+}

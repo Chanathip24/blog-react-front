@@ -1,6 +1,7 @@
 import React from 'react'
 import './Allproject.css'
 import { AiOutlineAppstore,AiOutlineBars } from "react-icons/ai";
+import Adcard from '../ad-card/Adcard';
 const Allproject = () => {
   return (
     <div className='adcontainer'>
@@ -35,22 +36,18 @@ const Allproject = () => {
             </div>
         </div>
 
-        {/* status detail */}
-        <div className="ad-details">
-            {/* fetch data */}
-            <div className="ad-details-data">
-                <div>
-                    <h4>This is the title</h4>
-                    <h5>Catagory</h5>
-                    <p>December 10,2020</p>
-                </div>
-                <hr />
-                <div>
-                    <p>Written by</p>
-                </div>
-
+        {/* Card of each blog */}
+        <div className='allblog'>
+            <div className="storeblog">
+                <Adcard/>
+                <Adcard/>
+                <Adcard/>
+                <Adcard/>
             </div>
         </div>
+
+
+
     </div>
   )
 }

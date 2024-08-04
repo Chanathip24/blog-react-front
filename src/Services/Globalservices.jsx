@@ -20,7 +20,22 @@ const getMonthname = (number)=>{
     const allname = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
     return allname[number]
 }
+const randomcolourcode = () =>{
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+const generateRandomPastelColor = () => {
+    const r = Math.floor((Math.random() * 127) + 127); // Random value between 127 and 254
+    const g = Math.floor((Math.random() * 127) + 127); // Random value between 127 and 254
+    const b = Math.floor((Math.random() * 127) + 127); // Random value between 127 and 254
+    return `rgb(${r},${g},${b})`;
+  };
 export {
     fetchData,
-    getMonthname
+    getMonthname,
+    generateRandomPastelColor
 }
