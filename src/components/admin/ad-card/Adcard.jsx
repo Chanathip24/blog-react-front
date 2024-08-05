@@ -2,10 +2,12 @@ import React from 'react'
 import { BsThreeDotsVertical } from "react-icons/bs"
 import './Adcard.css'
 import { useState,useEffect } from 'react'
+import Dropdown from '../dropdown/Dropdown'
+
 //random pastelcolor
 import { generateRandomPastelColor } from '../../../Services/Globalservices'
 const Adcard = () => {
-    const [isOpen,setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false)
     const [color, setColor] = useState('')
 
     //setbgcolor of card
@@ -18,29 +20,28 @@ const Adcard = () => {
     }
     const toggledropdown = ()=>{
         setOpen(!isOpen)
-        
     }
-    //เหลือ style dropdown and adjust
+    const other = ()=>{
+        setOpen(false)
+    }
+   
+    
   return (
     <div>
             
             {/* status detail */}
-            <div className="ad-details" style={cardstyle}>
+            <div className="ad-details"  style={cardstyle}>
             {/* fetch data card */}
-            {isOpen ?   
-            <div className='dropdown'>
-                    <select name="" id="">
-                        <option value="">Edit</option>
-                        <option value="">Delete</option>
-                    </select>
-            </div> : null}
+            <Dropdown toggledropdown={toggledropdown} isOpen={isOpen}/>
+            
 
                 <div className="ad-details-data">
                     <div className='ad-card-date'>
-                        
                         <p>December 10, 2020</p>
                         <div className='carddropdownstore'>
-                            <BsThreeDotsVertical className='carddropdown'  onClick={toggledropdown}/>
+                            {isOpen ? null: <BsThreeDotsVertical className='carddropdown'  onClick={toggledropdown}/>}
+                            
+                            
                         </div>
                         
                         

@@ -1,0 +1,17 @@
+.all-card{
+    padding: 1rem;
+    border: solid red;
+    background-color: white;
+    border-radius: 30px;
+    width: 300px;
+    
+}
+.all-card hr{
+    margin-top: 0;
+    border: solid rgb(133, 133, 133) 0.3px;
+}
+
+.all-card-title{
+    text-align: center;
+    padding: 1rem;
+}

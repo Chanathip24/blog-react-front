@@ -11,24 +11,22 @@
     padding: 5px;
     border-radius: 10px;
     transition: 0.3s;
+    z-index: 1;
 }
 .carddropdownstore:hover{
     background-color: rgb(255, 255, 255);
-
 }
 .carddropdown{
     cursor: pointer;
     
 }
-.dropdown{
-    position: absolute;
-    right: 0;
-    transition: 0.3s;
-}
+
+
 
 
 
 .ad-card-date{
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

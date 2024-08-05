@@ -1,0 +1,20 @@
+.dropdown{
+    
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    background-color: rgb(186, 223, 255);
+    border-radius: 1rem;
+    
+}
+.dropdown div{
+    width: 100%;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
+.dropdown div:hover{
+    background-color: rgb(153, 185, 213);
+}

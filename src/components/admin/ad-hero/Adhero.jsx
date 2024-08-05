@@ -3,13 +3,16 @@ import './Adhero.css'
 
 //page
 import Allproject from '../allProject/Allproject'
-import Lateblog from '../latestblog/Lateblog'
+import Alluser from '../allUser/Alluser'
+
 const Adhero = () => {
   return (
     <div>
-        Adhero
-        <Allproject/>
-        <Lateblog/>
+        <div>
+          <Allproject/>
+          <Alluser/>
+        </div>
+        
 
     </div>
   )

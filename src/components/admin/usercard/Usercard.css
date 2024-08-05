@@ -1,0 +1,15 @@
+.userpic img{
+    width: 35px;
+    height: 30px;
+    border-radius: 100%;
+}
+.user-title{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+
+.star{
+    cursor: pointer;
+}
