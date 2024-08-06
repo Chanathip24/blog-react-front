@@ -1,0 +1,40 @@
+.userpic img{
+    width: 45px;
+    height: 45px;
+    border-radius: 150px;
+}
+
+.user-name{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+.user-title{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.usercard{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+}
+.usercard:hover{
+    background-color: rgb(221, 240, 255);
+}
+.star{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.user-detail{
+    color: gray;
+    
+    
+}
+
+.user-detail p{
+    padding-left: 3.5rem;
+}
+

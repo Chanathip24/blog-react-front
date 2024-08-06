@@ -41,7 +41,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    
+    margin-bottom: 1rem;
 
 }
 
@@ -54,6 +54,7 @@ hr{
     margin-top: 1rem;
 }
 .ad-card-detail{
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

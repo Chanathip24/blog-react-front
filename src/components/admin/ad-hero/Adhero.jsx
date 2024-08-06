@@ -8,11 +8,10 @@ import Alluser from '../allUser/Alluser'
 const Adhero = () => {
   return (
     <div>
-        <div>
+        <div className='Dashboard'>
           <Allproject/>
           <Alluser/>
         </div>
-        
 
     </div>
   )

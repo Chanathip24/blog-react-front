@@ -2,7 +2,10 @@ import React from 'react'
 import './Allproject.css'
 import { AiOutlineAppstore,AiOutlineBars } from "react-icons/ai";
 import Adcard from '../ad-card/Adcard';
+import { useState } from 'react';
 const Allproject = () => {
+    const [isActive,setActive] = useState(false)
+
   return (
     <div className='adcontainer'>
         {/*Top of container */}
@@ -30,8 +33,8 @@ const Allproject = () => {
                     </div>
                 </div>
                 <div className="ad-blog">
-                    <h2><AiOutlineAppstore/></h2>
-                    <h2><AiOutlineBars/></h2>
+                    <h2 className='show'><AiOutlineAppstore/></h2>
+                    <h2 className='show'><AiOutlineBars/></h2>
                 </div>
             </div>
         </div>

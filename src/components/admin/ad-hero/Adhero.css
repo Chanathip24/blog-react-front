@@ -1,0 +1,8 @@
+.Dashboard{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    
+}

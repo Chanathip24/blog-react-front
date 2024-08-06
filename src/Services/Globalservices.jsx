@@ -7,7 +7,7 @@ const fetchData = async ({setLoading,setData})=>{
         const response = await axios.get("https://newsapi.org/v2/everything?q=apple&from=2024-07-24&to=2024-07-24&sortBy=popularity&apiKey=c8d7624343554d38bc8fd10485dd0012")
         
         setData(response.data.articles)
-        toast.success("Fetch success")
+        
     } catch (error) {
         toast.error("Fetch error")
         res.json({message: "Error fetching",error})
@@ -34,7 +34,22 @@ const generateRandomPastelColor = () => {
     const b = Math.floor((Math.random() * 127) + 127); // Random value between 127 and 254
     return `rgb(${r},${g},${b})`;
   };
+const checkauth = async ()=>{
+    try {
+        const res = await axios.get("http://localhost:8000/api/checkauth")
+        if(res.data.status ==="pass"){
+            return true;
+        }else{
+            return false;
+        }
+    } catch (error) {
+        
+        return false
+    }
+
+}
 export {
+    checkauth,
     fetchData,
     getMonthname,
     generateRandomPastelColor

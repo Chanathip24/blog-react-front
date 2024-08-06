@@ -38,11 +38,13 @@ const Adcard = () => {
                 <div className="ad-details-data">
                     <div className='ad-card-date'>
                         <p>December 10, 2020</p>
+                        {/* Dropdown */}
+                        {isOpen ? null :                        
                         <div className='carddropdownstore'>
-                            {isOpen ? null: <BsThreeDotsVertical className='carddropdown'  onClick={toggledropdown}/>}
-                            
-                            
+                             <BsThreeDotsVertical className='carddropdown'  onClick={toggledropdown}/>
                         </div>
+                        }
+
                         
                         
 
