@@ -17,8 +17,22 @@
     font-size: 2rem;
     gap: 10px;
     align-items: center;
-    margin-right: 2rem;
+    
 }
+.nav-addon span{
+    cursor: pointer;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-addon span:hover{
+    
+    background-color: rgb(198, 198, 198);
+}
+
 .nav-username{
     display: flex;
     align-items: center;

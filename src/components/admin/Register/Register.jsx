@@ -45,7 +45,7 @@ const Register = ({handleclick,setAuthorize}) => {
           <input type="email" name='email' onChange={handlechange} placeholder='Email'/>
           <input type="text" name='fname' onChange={handlechange} placeholder='Firstname' />
           <input type="text" name="lname" onChange={handlechange} placeholder='Lastname'/>
-          <input type="Password" placeholder='Password' onChange={handlechange} name='password'/>
+          <input type="password" placeholder='Password' onChange={handlechange} name='password'/>
         </div>
         <button onClick={handlesubmit} >Register</button>
         <p>Already have an account? <span onClick={handleclick}>Login</span></p>
