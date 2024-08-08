@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav id='nav'>
         <ul>
-            <li><a href="https://google.com">About</a></li>
+            <li>About</li>
             <li className='test'>Contact</li>
             
         </ul>

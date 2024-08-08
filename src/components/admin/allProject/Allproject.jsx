@@ -3,7 +3,7 @@ import './Allproject.css'
 import { AiOutlineAppstore,AiOutlineBars } from "react-icons/ai";
 import Adcard from '../ad-card/Adcard';
 import { useState } from 'react';
-const Allproject = () => {
+const Allproject = ({post}) => {
     const [isActive,setActive] = useState(false)
 
   return (
@@ -42,10 +42,12 @@ const Allproject = () => {
         {/* Card of each blog */}
         <div className='allblog'>
             <div className="storeblog">
-                <Adcard/>
-                <Adcard/>
-                <Adcard/>
-                <Adcard/>
+                {post ? post.map((item,index)=>(
+                    
+                    <Adcard post={item} key={index}/>
+                )) : <h1>No data</h1>}
+                
+
             </div>
         </div>
 

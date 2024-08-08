@@ -1,0 +1,22 @@
+.Unknown{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    
+}
+.un-text{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Unknown img{
+    margin-right: -2rem;
+}
+
+.Unknown ul li{
+    list-style-type: none;
+}

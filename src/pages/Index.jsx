@@ -17,7 +17,7 @@ const Index = () => {
     window.addEventListener("scroll",()=>{
         const nav = document.getElementById('nav')
         const logo = document.getElementById('logo')
-        if(window.scrollY>200){
+        if(window.scrollY>40){
             nav.classList.add("bgnav")
             logo.classList.add("logoorg")
         }else{

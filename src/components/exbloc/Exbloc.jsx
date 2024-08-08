@@ -11,7 +11,7 @@ const Exbloc = ({post}) => {
     const [data,setData] = useState(post)
     
     //active page for pagination or cut data
-    const curdata = data.slice(6,8)
+    const curdata = data.slice(0,2)
   return (
     <>
 

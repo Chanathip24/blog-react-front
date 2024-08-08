@@ -3,9 +3,9 @@ import './ot.css'
 import Card2 from '../card2/Card2'
 import { useState } from 'react'
 const Ot = ({post}) => {
-    const [data,setData]= useState(post)
+    const data= post
     //cut data
-    const curdata = data.slice(40,43)
+    const curdata = data.slice(0,3)
     
   return (
     <>

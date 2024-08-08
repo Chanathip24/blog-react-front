@@ -14,9 +14,11 @@ const Create = () => {
     urlToImage: "",
     publishedAt: date,
     content: "",
+    catagory : ""
   });
   const handlechange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    console.log(data)
   };
   const handlesubmit = async (e) => {
     e.preventDefault();
@@ -83,6 +85,15 @@ const Create = () => {
             placeholder="Author"
             />
 
+            <label htmlFor="">Catagory</label>
+            <select name="catagory" onChange={handlechange}>
+              <option value="Tools" >Tools</option>
+              <option value="Shader">Shader</option>
+              <option value="Modeling">Modeling</option>
+              <option value="Artist">Artist</option>
+              <option value="Animation">Animation</option>
+              <option value="Generative">Generative</option>
+            </select>
             <button onClick={handlesubmit}>Create</button>
         </div>
         

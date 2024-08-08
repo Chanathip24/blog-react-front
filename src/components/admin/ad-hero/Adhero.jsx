@@ -5,11 +5,11 @@ import './Adhero.css'
 import Allproject from '../allProject/Allproject'
 import Alluser from '../allUser/Alluser'
 
-const Adhero = () => {
+const Adhero = ({post,client}) => {
   return (
     <div>
         <div className='Dashboard'>
-          <Allproject/>
+          <Allproject post={post}/>
           <Alluser/>
         </div>
 

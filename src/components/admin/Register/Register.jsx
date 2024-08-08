@@ -4,8 +4,6 @@ import axios from 'axios'
 import { Toaster,toast } from 'react-hot-toast'
 const Register = ({handleclick,setAuthorize}) => {
   
-
-
   const [data,setData] = useState({
     username:"",
     email : "",
