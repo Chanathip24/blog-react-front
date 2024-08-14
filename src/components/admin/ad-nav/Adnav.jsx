@@ -39,14 +39,14 @@ const Adnav = () => {
             <FaRegMoon />
           </span>
         )}
-        <span>
-          <FaCirclePlus onClick={gtc}/>
+        <span onClick={gtc}>
+          <FaCirclePlus />
         </span>
         <span>
           <FaBell />
         </span>
-        <span>
-          <IoMdExit onClick={lo} />
+        <span onClick={lo}>
+          <IoMdExit  />
         </span>
       </div>
       <div className="nav-username">

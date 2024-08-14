@@ -45,6 +45,7 @@ const Adcard = ({ post }) => {
       {/* status detail */}
       <div className="ad-details" style={cardstyle}>
         {/* fetch data card */}
+
         {isOpen ? <Dropdown toggledropdown={toggledropdown} isOpen={isOpen} id={post.id} /> : null}
 
         <div className="ad-details-data">
@@ -52,13 +53,10 @@ const Adcard = ({ post }) => {
             <p>
               {monthname} {day}, {year}
             </p>
-            {/* Dropdown */}
+            {/* Dropdown symbol*/}
             {isOpen ? null : (
-              <div className="carddropdownstore">
-                <BsThreeDotsVertical
-                  className="carddropdown"
-                  onClick={toggledropdown}
-                />
+              <div className="carddropdownstore" onClick={toggledropdown}>
+                <BsThreeDotsVertical className="carddropdown"/>
               </div>
             )}
           </div>

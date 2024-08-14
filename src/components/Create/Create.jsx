@@ -8,17 +8,16 @@ const Create = () => {
   const navigate = useNavigate();
   const date = new Date();
   const [data, setData] = useState({
-    author: "",
     title: "",
     description: "",
     urlToImage: "",
     publishedAt: date,
     content: "",
-    catagory : ""
+    catagory : "Unknown"
   });
   const handlechange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    console.log(data)
+    
   };
   const handlesubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +27,7 @@ const Create = () => {
         toast.success("Blog is created");
         setTimeout(() => {
           navigate("/Admin");
-        }, 2000);
+        }, 1500);
       } else {
         return toast.error(res.data.message);
       }
@@ -77,16 +76,10 @@ const Create = () => {
             placeholder="Image"
             />
 
-            <label htmlFor="title">Author</label>
-            <input
-            type="text"
-            name="author"
-            onChange={handlechange}
-            placeholder="Author"
-            />
 
             <label htmlFor="">Catagory</label>
             <select name="catagory" onChange={handlechange}>
+              <option value="Unknown"></option>
               <option value="Tools" >Tools</option>
               <option value="Shader">Shader</option>
               <option value="Modeling">Modeling</option>

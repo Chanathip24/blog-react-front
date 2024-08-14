@@ -1,0 +1,32 @@
+.myblog{
+    width: 100%;
+    height: auto;
+    padding: 4rem 10rem;
+
+    hr{
+        margin-bottom: 3rem;
+    }
+    .myimg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    img{
+        width: 500px;
+    }
+}
+
+.myblog-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .blog-des{
+        width: 300px;
+    }
+}
+
+.post-title{
+    margin-bottom: 1rem;
+}

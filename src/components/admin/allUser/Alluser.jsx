@@ -1,9 +1,24 @@
 import React from 'react'
 import Usercard from '../allusercard/Usercard'
 import './Alluser.css'
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
+import axios from 'axios'
 const Alluser = () => {
-   
+    const [users , setUsers] = useState([])
+   const alluser = async ()=>{
+    try {
+        const res = await axios.get("http://localhost:8000/api/user/getall")
+        setUsers(res.data.result)
+        
+    } catch (error) {
+        console.log(error)
+    }
+      
+   }
+   //useeffect to fetch here 
+   useEffect(()=>{
+        alluser()
+   },[])
   return (
     <div>
         <div className="all-card">
@@ -12,10 +27,11 @@ const Alluser = () => {
             </div>
             <hr />
             <div className="all-card-data">
-                <Usercard/>
-                <Usercard/>
-                <Usercard/>
-                <Usercard/>
+                {users.map((item,index)=>{
+                    return <Usercard key={index} user={item}/>
+                })}
+                
+
             </div>
             
         </div>
